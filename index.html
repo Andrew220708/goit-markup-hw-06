@@ -481,9 +481,36 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <input type="text" class="form-input" name="user-name" />
-          <input type="email" class="form-input" name="user-email" />
-          <input type="tel" class="form-input" name="user-tel" />
+          <label
+            ><span class="input-title">Имя</span>
+            <input type="text" class="form-input" name="user-name" />
+          </label>
+          <div class="input-field">
+            <label for="user-tel" class="input-title">Телефон</label>
+            <input
+              type="tel"
+              class="form-input"
+              name="user-tel"
+              id="user-tel"
+            />
+          </div>
+          <div class="input-field">
+            <label for="user-email" class="input-title">Почта</label>
+            <input
+              type="email"
+              class="form-input"
+              name="user-email"
+              id="user-email"
+            />
+          </div>
+          <div class="input-field">
+            <label for="user-comment" class="input-title">Комментарий</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-text"
+            ></textarea>
+          </div>
           <button type="submit">Отправить</button>
         </form>
       </div>

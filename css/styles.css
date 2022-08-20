@@ -519,19 +519,33 @@ line-height: 1.15;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
-margin-bottom: 30px;
+margin-bottom: 12px;
+}
+.modal-text {
+width: 448px;
+height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+resize: none;
+
 }
 .form-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-margin-bottom: 28px;
+margin-bottom: 10px;
 padding-left: 10px;
-
 }
-
-
+.input-title {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+color: #757575;
+display: block;
+margin-bottom: 4px;
+}
 .backdrop.is-hidden .mobal {
 transform: translate(-50%, -50%); scale(0);
 }

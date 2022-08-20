@@ -527,16 +527,114 @@ height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 resize: none;
-
+padding-top: 12px;
+padding-right: 16px;
+padding-bottom: 12px;
+padding-left: 16px;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+.modal-text:hover,
+.modal-text:focus {
+outline-color: 
+rgba(33, 150, 243, 1);
+}
+.input-wrap {
+position: relative;
+}
+.input-field {
+margin-bottom: 10px;
+}
+.input-field-comment {
+  margin-bottom: 20px;
 }
 .form-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-margin-bottom: 10px;
 padding-left: 10px;
+padding-left: 42px;
+transition-property:  box-shadow;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
+
+.form-input:focus,
+.form-input:hover {
+  outline-color: 
+rgba(33, 150, 243, 1);
+box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.form-input:focus + .input-icon {
+  fill: #2196F3;
+}
+
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.check-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+display: flex;
+align-items: center;
+}
+
+.check-text span {
+width: 16px;
+height: 15px;
+border: 2px solid #212121;
+border-radius: 3px;
+margin-right: 8px; 
+display: flex;
+align-items: center;
+justify-content: center;
+transition: background-color 250ms linear, border-color 250ms  linear;
+}
+.check-icon {
+  fill: transparent;
+  transition: fill 250ms linear;
+}
+.input-check:checked + .check-text span {
+  background-color: #2196f3;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-color: #2196f3;
+}
+.input-check:checked + .check-text .check-icon {
+  fill: #FFFFFF;
+}
+.input-check:focus + .check-text span {
+  border-color: #2196f3;
+}
+/* .check-text::before {
+content: '';
+width: 16px;
+height: 15px;
+border: 2px solid #212121;
+border-radius: 3px;
+display: block;
+margin-right: 8px;
+}
+.input-check:hover + .check-text::before {
+  background-color: #2196f3;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-image: url(../img/Vector.svg);
+  background-repeat: ;
+  border: none;
+} */
 .input-title {
 font-weight: 400;
 font-size: 12px;
